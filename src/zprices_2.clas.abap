@@ -24,7 +24,7 @@ CLASS ZPRICES_2 IMPLEMENTATION.
           ls_liftnames LIKE LINE OF lt_liftnames.
     DATA: low_tax TYPE f VALUE '0.16'.
     DATA: high_tax TYPE f VALUE '0.07'.
-    DATA: vip TYPE abap_boolean.
+    DATA: vip TYPE abap_bool.
 
     SELECT SINGLE cost FROM zbase_prices WHERE type = @type INTO  @DATA(gt_baseprice).
 

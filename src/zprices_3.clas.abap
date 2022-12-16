@@ -23,7 +23,7 @@ CLASS ZPRICES_3 IMPLEMENTATION.
     DATA: low_tax TYPE f VALUE '0.16'.
     DATA: cost_with_decimals TYPE f.
     DATA: high_tax TYPE f VALUE '0.07'.
-    DATA: vip TYPE abap_boolean.
+    DATA: vip TYPE abap_bool.
 
     IF age IS SUPPLIED AND age < 6.
       cost = 0.
@@ -36,7 +36,7 @@ CLASS ZPRICES_3 IMPLEMENTATION.
         DATA: reduction TYPE int4 VALUE 0.
         FIELD-SYMBOLS: <holidays_line> TYPE zholidays.
 
-        DATA(date) = cl_abap_context_info=>get_system_date( ).
+        DATA(date) = sy-datum.
 
         LOOP AT holidays ASSIGNING <holidays_line>.
           IF date IS NOT INITIAL.
