@@ -12,6 +12,9 @@ Your task is to refactor this ancient code so it is more readable and testable. 
 * ZPRICES_2 - more dependencies for you to solve
 * ZPRICES_3 - you guessed it - even more dependencies
 
+## Give a Star! :star:
+If you like or are using this project please give it a star. Thanks!
+
 ## New Features
 When you are done with refactoring, you are not done done:
 * Your PO calls you and tells you, that "your awesome software" has to integrate with external apps that will use it for cross-selling. The product vision is that people can buy snowboots via an online shopping app - and a lift pass. They can book a hotel via a portal - and a lift pass etc. Great, isnt it? To make your business logic available for external partners you need to set up a REST Webservice.
